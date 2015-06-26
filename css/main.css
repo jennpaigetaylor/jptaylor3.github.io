@@ -25,10 +25,7 @@ body {
 
 .scrollto {
     padding: 10px 10px 0 0;
-}
-
-.scrollto:visited {
-  color: black;
+    color: black;
 }
 
 .scrollto:hover {

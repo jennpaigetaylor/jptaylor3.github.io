@@ -62,15 +62,11 @@ body {
 }
 
 .projects {
-  font-size: .25em;
+  font-size: .4em;
 }
 
 .projects:hover {
   color: white;
-}
-
-.projects:visited {
-  color:black;
 }
 
 /*for iphone ipad: 

@@ -1,20 +1,7 @@
-* {
+body {
 	font-family: 'Raleway', Arial, sans-serif;
 	color: light gray;
 	font-size: 1em;
 	font-weight: 400;
 	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../img/chalkboard-black.jpg);
-}
-
-header {
-	font-size: 3em;
-	color: white;
-}
-
-.honest {
-	font-family: ;
-}
-
-.burgers {
-	font-family: ;
 }

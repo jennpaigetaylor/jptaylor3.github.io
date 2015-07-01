@@ -1,25 +1,27 @@
+@font-face {
+	font-family: "chalkboard cursive";
+	src: url('../font/Tafelschrift.ttf') format ('truetype');
+}
+
+@font-face {
+	font-family: "chalkboard caps";
+	src: url('../font/KGNoRegretsSketch.tff') format ('truetype');
+}
+
 body {
-	font-family: 'Raleway', Arial, sans-serif;
-	font-size: 1em;
 	font-weight: 400;
 	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../img/chalkboard-black.jpg);
 }
 
-h1 {
-	color: white;
-	font-family: 'KGF', Arial, sans-serif;
-}
-
 .honest {
-	font-family:;
+	font: 1em "chalkboard cursive", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .burgers {
-	font-family:;
+	font: 1em "chalkboard caps", Arial, Helvetica, Geneva, sans-serif;
 }
 
-@font-face {
-	font-family: 'KGF';
-	src: url('fonts/KGFonts-TOU.txt');
-	src: local('KGF'), local('KGFonts-TOU'), url('fonts/KGNoregretsSketch.ttf') format('truetype');
-}
+/*h1 {
+	color: white;
+	font-family: 'KGF', Arial, sans-serif;
+}*/

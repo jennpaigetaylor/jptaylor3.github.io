@@ -1,27 +1,9 @@
-@font-face {
-	font-family: "chalkboard cursive";
-	src: url('../font/Tafelschrift.ttf') format ('truetype');
-}
-
-@font-face {
-	font-family: "chalkboard caps";
-	src: url('../font/KGNoRegretsSketch.tff') format ('truetype');
-}
-
 body {
 	font-weight: 400;
 	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../img/chalkboard-black.jpg);
 }
 
-.honest {
-	font: 1em "chalkboard cursive", Arial, Helvetica, Geneva, sans-serif;
-}
-
-.burgers {
-	font: 1em "chalkboard caps", Arial, Helvetica, Geneva, sans-serif;
-}
-
-/*h1 {
+h1 {
 	color: white;
 	font-family: 'KGF', Arial, sans-serif;
-}*/
+}

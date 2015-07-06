@@ -3,7 +3,7 @@ body {
 	color: #F0F0F0;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Tafelschrift';
   src: url('Tafelschrift.eot'); /* IE9 Compat Modes */
   src: url('Tafelschrift.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -13,9 +13,9 @@ body {
        url('Tafelschrift.svg#svgFontName') format('svg'); /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
-/*@font-face {
+@font-face {
   font-family: 'KGNoRegretsSketch';
   src: url('KGNoRegretsSketch.eot'); /* IE9 Compat Modes */
   src: url('KGNoRegretsSketch.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -25,23 +25,22 @@ body {
        url('KGNoRegretsSketch.svg#svgFontName') format('svg'); /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
-}*/
+}
 
 div#welcome {
 	display: inline;
 }
 
-.fancy {
+/*.fancy {
 	font-size: 36px;
 	font-family: 'Tafelschrift,' Helvetica, sans-serif;
 	font-weight: bold;
 	float: left;
-}
+}*/
 
-/*
 .block {
 	font-size: 36px;
 	font-family: 'KGNoRegretsSketch,' Helvetica, sans-serif;
 	font-weight: bold;
 	float: left;
-}*/
+}

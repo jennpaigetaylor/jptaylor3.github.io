@@ -4,11 +4,13 @@ body {
 }
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'KGNoRegretsSketch';
+  src: url('KGNoRegretsSketch.eot'); /* IE9 Compat Modes */
+  src: url('KGNoRegretsSketch.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KGNoRegretsSketch.woff2') format('woff2'), /* Super Modern Browsers */
+       url('KGNoRegretsSketch.woff') format('woff'), /* Pretty Modern Browsers */
+       url('KGNoRegretsSketch.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KGNoRegretsSketch.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
 }

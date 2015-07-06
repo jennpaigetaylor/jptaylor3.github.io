@@ -20,6 +20,10 @@ div#welcome {
 	display: block;
 }
 
+.fancy {
+
+}
+
 .block {
-	font-size: 36px;
+	font-size: 64px;
 }

@@ -1,6 +1,7 @@
 body {
 	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../img/chalkboard-black.jpg);
 	color: #F0F0F0;
+	font: 'KGNoRegretsSketch,' helvetica, sans-serif;
 }
 
 @font-face {
@@ -13,15 +14,4 @@ body {
        url('KGNoRegretsSketch.svg#svgFontName') format('svg'); /* Legacy iOS */
   font-weight: normal;
   font-style: normal;
-}
-
-/*div#welcome {
-	display: inline;
-}*/
-
-.block {
-	font-size: 36px;
-	font-family: 'KGNoRegretsSketch,' Helvetica, sans-serif;
-	font-weight: bold;
-	float: left;
 }

@@ -1,8 +1,7 @@
 body {
 	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../img/chalkboard-black.jpg);
+	font-family: KGNoRegretsSketch;
 	color: #F0F0F0;
-	font-family: 'KGNoRegretsSketch,' helvetica, sans-serif;
-	font-size: 40px;
 }
 
 @font-face {
@@ -17,3 +16,10 @@ body {
   font-style: normal;
 }
 
+div#welcome {
+	display: block;
+}
+
+.block {
+	font-size: 36px;
+}

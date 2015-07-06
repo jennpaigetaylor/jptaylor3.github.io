@@ -3,18 +3,6 @@ body {
 	color: #F0F0F0;
 }
 
-/*@font-face {
-  font-family: 'Tafelschrift';
-  src: url('Tafelschrift.eot'); /* IE9 Compat Modes */
-  src: url('Tafelschrift.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Tafelschrift.woff2') format('woff2'), /* Super Modern Browsers */
-       url('Tafelschrift.woff') format('woff'), /* Pretty Modern Browsers */
-       url('Tafelschrift.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Tafelschrift.svg#svgFontName') format('svg'); /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 @font-face {
   font-family: 'KGNoRegretsSketch';
   src: url('KGNoRegretsSketch.eot'); /* IE9 Compat Modes */
@@ -27,15 +15,8 @@ body {
   font-style: normal;
 }
 
-div#welcome {
+/*div#welcome {
 	display: inline;
-}
-
-/*.fancy {
-	font-size: 36px;
-	font-family: 'Tafelschrift,' Helvetica, sans-serif;
-	font-weight: bold;
-	float: left;
 }*/
 
 .block {

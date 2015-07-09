@@ -1,0 +1,18 @@
+body {
+	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../img/ChalkBack.png);
+	font-family: 'FFF_Tusj', fallback, sans-serif;
+	color: #fff;
+}
+
+@font-face {
+  font-family: 'FFF_Tusj';
+  src: url('FFF_Tusj.eot'); /* IE9 Compat Modes */
+  src: url('FFF_Tusj.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('FFF_Tusj.woff2') format('woff2'), /* Super Modern Browsers */
+       url('FFF_Tusj.woff') format('woff'), /* Pretty Modern Browsers */
+       url('FFF_Tusj.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('FFF_Tusj.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+

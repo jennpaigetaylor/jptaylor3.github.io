@@ -1,14 +1,5 @@
-@font-face {
-    font-family: 'SYBIG___';
-    src: url('CSYBIG___.eot');
-    src: local('SYBIG___'), 
-         local('SYBIG___'), 
-         url('SYBIG___.ttf') format('truetype'),
-         url('SYBIG___.svg#font') format('svg'); 
-}
-
 * {
-	font: 'SYBIG___';
+	font: Helvetica, sans-serif;
 }
 
 .intro {
@@ -23,13 +14,13 @@
 	color: #fff;
 	padding: 30px 0px 0px 0px;
 	margin-bottom: 10px;
-	font: 'SYBIG___';
 }
 
 #download {
 background-color: #ffffe0;
   color: #000;
   height: 300px;
+  padding: none;
 }
 
 #contact {

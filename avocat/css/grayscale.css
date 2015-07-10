@@ -170,7 +170,7 @@ a:focus {
 
 @media(min-width:768px) {
     .intro {
-        height: 90%;
+        height: 100%;
         padding: 0;
     }
 

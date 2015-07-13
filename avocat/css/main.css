@@ -2,7 +2,7 @@
   font-family: 'AftaSansThin-Regular';
   src: url('AftaSansThin-Regular.eot'); /* IE9 Compat Modes */
   src: url('AftaSansThin-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('AftaSansThin-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('AftaSansThin-Regular.woff2') format('woff2'),  Super Modern Browsers 
        url('AftaSansThin-Regular.woff') format('woff'), /* Pretty Modern Browsers */
        url('AftaSansThin-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('AftaSansThin-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
@@ -16,13 +16,21 @@ body {
 	color: #000;
 }
 
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .brand-heading {
 	color: #000;
 }
 
 #about {
 	color: #fff;
-	margin-top: 20px;
+	margin-top: 0px;
+}
+
+.drinks, .sand, .sides {
+  color: #fff;
 }
 
 #download {
@@ -38,4 +46,14 @@ bacAftaSansThin-Regularround-color: #fff;
 
 .btn {
 	margin-top:400px;
+}
+
+.download-section {
+  color: #fff;
+}
+
+@media (min-width: 767px)
+#map {
+  height: 400px;
+  margin-top: 0px;
 }

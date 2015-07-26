@@ -24,6 +24,8 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+    <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,6 +34,28 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script>
+function initialize() {
+  var mapElem = document.getElementById("map"),
+      myOptions = {
+        zoom: 13,
+        center: new google.maps.LatLng(41.8965,-84.063),
+        navigationControl: true,
+        navigationControlOptions: {
+          style: google.maps.NavigationControlStyle.SMALL,
+          position: google.maps.ControlPosition.TOP_RIGHT
+        },
+        streetViewControl: false,
+        mapTypeControl: false,
+        disableDoubleClickZoom: true,
+        scrollwheel: false,
+        backgroundColor: '#f2efe9',
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      },
+      map = new google.maps.Map(mapElem, myOptions);
+}
+</script>
 
 </head>
 
@@ -58,20 +82,18 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Locations</a>
+                        <a class="page-scroll" href="#services">Menu</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Menu</a>
+                        <a class="page-scroll" href="#portfolio">Locations</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">The Farmers</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Reservations</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Order</a>
                     </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -84,59 +106,18 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Gourmet Burgers</div>
-<!--                 <div class="intro-heading">Gourmet Burgers</div> -->
-                <a href="#services" class="page-scroll btn btn-xl">Find a Bonne Sant&eacute; Near You</a>
-            </div>
+                    <a href="#services"><i class="fa fa-angle-double-down animmated fa-4x"></i></a>
+            </div> 
         </div>
     </header>
 
     <!-- Services Section -->
     <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Boston Locations</h2>
-                    <h3 class="section-subheading text-muted">Open Monday through Saturday 11am-10pm
-                    <br></br>
-                    Valet parking available</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Back Bay</h4>
-                    <p class="text-muted">300 Commonwealth Ave</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">NORTH END</h4>
-                    <p class="text-muted">Llocation</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">SOUTH BOSTON</h4>
-                    <p class="text-muted">Location south boston</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
-        <div class="container">
+  <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Menu</h2>
-                    <h3 class="section-subheading text-muted">Locally sourced, organic, free range, and vegetarian options</h3>
+                    <h3 class="section-subheading text-muted">Fresh, local, & organic. Click into each menu to place your order for take out. <br>See "locations" below to reserve your table now.</br></h3>
                 </div>
             </div>
             <div class="row">
@@ -147,13 +128,13 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/roundicons.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Beverages</h4>
-                        <p class="text-muted">Soda, Beer, and Wine</p>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -161,13 +142,13 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/sliders.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Appetizers</h4>
-                        <p class="text-muted">!!</p>
+                        <h4>Burgers & Entr&eacute;es</h4>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -175,239 +156,182 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/veggies.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Soup and Salad</h4>
-                        <p class="text-muted">Build your own</p>
+                        <h4>Sides</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Burgers</h4>
-                        <p class="text-muted">Classy variety burgers</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Entrees</h4>
-                        <p class="text-muted">Antipasta options</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Desserts</h4>
-                        <p class="text-muted">Decadent night caps</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Menu Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Locations & Reservations</h2>
+                    <h3 class="section-subheading text-muted">Open Monday through Saturday 11am-10pm</h3>
+                </div>
+            </div>
+
+            <div class="row text-center">
+
+                <div class="col-md-6">
+                    <span class="fa-stack fa-6x">
+                        <div class="map">
+                        <iframe class="img-rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.6719034165985!2d-71.08520299999999!3d42.349517999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a0f812dfb3b%3A0x3b0cc59bedfce5df!2s300+Commonwealth+Ave%2C+Boston%2C+MA+02115!5e0!3m2!1sen!2sus!4v1436822347301" bTake Out-radius="10px" width="250" height="200" framebTake Out="3" style="bTake Out:0" allowfullscreen></iframe>
+                        </div>
+                    </span>
+                    <h4 class="service-heading">BACK BAY</h4>
+                    <p class="text-muted">300 Commonwealth Ave <br>Boston, MA 02115 | 617-345-3555</br></p>
+                </div>
+
+                <div class="col-md-6">
+                    <span class="fa-stack fa-6x">
+                        <div class="map">
+                        <iframe class="img-rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0894179546085!2d-71.0568734!3d42.3619336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708f5ba01249%3A0xd925f5d56a696ef!2s100+Hanover+St%2C+Haymarket%2C+Boston%2C+MA+02108!5e0!3m2!1sen!2sus!4v1436822540415" bTake Out-radius="10px" width="250" height="200" framebTake Out="5" style="bTake Out:0" allowfullscreen></iframe>
+
+                        </div>
+                    </span>
+                    <h4 class="service-heading">NORTH END</h4>
+                    <p class="text-muted">100 Hanover Street <br>Boston, MA 02108 | 617-345-4555</br></p>
+                </div>
+
+            </div>
+        </div>
+
+<br></br>
+<br></br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-heading">Reserve your table now</h3>
+                    <br></br>
+                </div>
+            </div>
+
+<div id="reservations">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="Location" class="form-control" placeholder="Restaurant Location" id="name" required data-validation-required-message="Please enter your reservation location here.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="Name" class="form-control" placeholder="Party Name" id="name" required data-validation-required-message="Please enter your party name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                        <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="Name" class="form-control" placeholder=" Party Size & Time" id="name" required data-validation-required-message="Please enter your party size to reserve seats.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+
+                           <br></br>
+                            
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Make Reservation</button>
+                            </div>
+            
+        </div>
+    </section>
+
+    <!-- Farmers Section -->
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Meet our farmers</h2>
-                    <h3 class="section-subheading text-muted">Bonne Chance only provides farm fresh food ...</h3>
-                </div>
+                   </div>
             </div>
+         
+<br></br>
+
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/farmer1.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Essex Farms</h4>
+                                    <h4>Acton CSA</h4>
                                     <h4 class="subheading">Jackson, MA</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Jeremy Ash runs ...</p>
+                                    <p class="text-muted">Jeremy Acton runs Community Supported Agriculture farm in Jackson, MA. All the vegetables at Bonne Sante come straight from his organic farm. Become a member of the CSA for fresh veggies on the reg.</p>
                                 </div>
                             </div>
                         </li>
+
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/cows.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Mike's Micro-brewery</h4>
-                                    <h4 class="subheading">Scratham, NH</h4>
+                                    <h4>Roger's Range</h4>
+                                    <h4 class="subheading">Swurst, NH</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Since 2005, Mike Williams and his wife began their own micro-brewery. ABC biodynamic wine.</p>
+                                    <p class="text-muted">Roger Williams raises all of his animals with a grass fed diet and holds a free range farm in NH. He believes that what the animals eat makes a difference in your own health.</p>
                                 </div>
                             </div>
                         </li>
-                        <li>
+
+                        <li class="last-child">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/vine.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4>Valentino Vineyard</h4>
+                                    <h4 class="subheading">Fairport, MA</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">Since 2005, Mike Valentino and his wife have been producing organic, biodynamic wine. They have recently added a micro-brewery to provide eco alcohol.</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
+
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
     
     <!-- Contact Section -->
     <section id="contact">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Order Take Out</h2>
+                    <h3 class="section-subheading text-muted">Place your order now for pick up in only 30 minutes!</h3>
                 </div>
             </div>
             <div class="row">
@@ -430,14 +354,14 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Your Order *" id="message" required data-validation-required-message="Please enter all menu items you would like to order for pick up."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">Send Order</button>
                             </div>
                         </div>
                     </form>
@@ -450,7 +374,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                    <span class="copyright">Copyright &copy; JPT 2015</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -491,18 +415,12 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <h2>Beverages</h2>
+                            <p class="item-intro text-muted">Beer, wine, and more!</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.jpg" alt="">
+                            <p>Ordering to go? Select and submit your beverages of choice by clicking below</p>
                             <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Place Order</button>
                         </div>
                     </div>
                 </div>
@@ -523,12 +441,11 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Heading</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>Entrees</h2>
+                            <p class="item-intro text-muted">Burgers, chicken, and more!</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/sliders.jpg" alt="">
+                            <p>Ordering to go? Select and submit your beverages of choice by clicking below.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Place Order</button>
                         </div>
                     </div>
                 </div>
@@ -550,12 +467,11 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>Salads & Sides</h2>
+                            <p class=""item-intro text-muted"">Salads and other vegetable sides!</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/veggies.jpg" alt="">
+                            <p>Ordering to go? Select your sides and submit your order for pick up.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Place Order</button>
                         </div>
                     </div>
                 </div>
@@ -563,86 +479,6 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

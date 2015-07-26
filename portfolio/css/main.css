@@ -1,76 +1,164 @@
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  top: 0;
   overflow: auto;
   text-decoration: none;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 200;
   text-decoration: none;
   color: black;
+  text-align: center;
+/*  border: 2px solid red;*/
 }
 
-a {
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
   text-decoration: none;
 }
 
 .menu {
   width: 100%;
-  height: 2em;
+  height: 60px;
   background-color: rgba(7,7,23,0.2);
   position: fixed;
   font-size: 1.5em;
   font-weight:200;
-  text-align: right;
-  float: right;
   z-index: 9999;
 }
 
+/*----- Toggle Button -----*/
+/*.toggle-nav {
+    display:none;
+}
+
+@media screen and (max-width: 490px) {
+    .menu {
+        position:relative;
+        display:inline-block;
+    }
+ 
+    .menu div.nav {
+        display:none;
+    }
+ 
+    .menu div.nav {
+        width:100%;
+        position:absolute;
+        top:120%;
+        left:0px;
+        padding:10px 18px;
+        border-radius:3px;
+        background: transparent;
+    }
+ 
+    .menu div:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        left:22px;
+        content:'';
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid transparent;
+    }
+ 
+    .menu div {
+        margin:5px 0px 5px 0px;
+        float:none;
+        display:block;
+    }
+ 
+    .menu a {
+        display:block;
+    }
+ 
+    .toggle-nav {
+        padding:20px;
+        float:right;
+        display:inline-block;
+        border-radius:3px;
+        color:#fff;
+        font-size:1em;
+        transition:color linear 0.15s;
+    }
+ 
+    .toggle-nav:hover, .toggle-nav.nav {
+        text-decoration:none;
+        color:#fff;
+    }*/
+
+
+
+.logo {
+  padding: 15px 0px 15px 15px;
+  color: black;
+  text-decoration: none;
+  float: left;
+}
+
+.logo:hover {
+  color: white;
+  height: 100%;
+  text-decoration: none;
+}
+
 .scrollto {
-    padding: 10px 10px 0 0;
+    padding: 15px 20px 15px 0px;
     color: black;
+    text-decoration: none;
+    float: right;
 }
 
 .scrollto:hover {
   color: white;
-  box-sizing: border-box;
   height: 100%;
+  text-decoration: none;
 }
 
-#a {
-    background-color:light gray;
-    width:100%;
-    height:8em;
-    padding: 20px 20px 20px 80px;
-    font-size: 1.5em;
-    font-weight: 200;
-}
-
-#b {
-  background-color:lavender;
-    width:100%;
-  height:8em;
-  padding: 20px 20px 20px 80px;
-      font-size: 1.5em;
-    font-weight:200;
-}
-
-#c {
-  background-color:mistyrose;
-    width:100%;
-  height:8em;
-  padding: 20px 20px 20px 80px;
-      font-size: 1.5em;
-    font-weight:100;
-}
-
-.projects {
-  font-size: 1em;
-}
-
-.projects a:hover {
+/*why doesn't this work?*/
+.scrollto:active {
   color: white;
+  height: 100%;
+  text-decoration: none;
+}
+
+#headfix {
+  background: gray;
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+
+.box {
+  border: 13px white;
+  border-style: double;
+  padding: 15px 15px;
+  width: 400px;
+  color: white;
+  display: inline-block;
+  margin: 150px 0 0 0;
+}
+
+#work {
+  background-color: pink;
+  width: 100%;
+  height: 15em;
+}
+
+#about {
+  background-color:lavender;
+  width: 100%;
+  float: left;
+  height: 15em;
+}
+
+#contact {
+  background-color:mistyrose; 
+  width: 100%;
+  height: 15em;
 }
 
 /*for iphone ipad: 

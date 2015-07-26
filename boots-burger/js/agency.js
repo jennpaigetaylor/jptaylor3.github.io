@@ -24,3 +24,14 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+var $map
+  , $cover
+  ;
+
+$map = $('.map');
+$cover = $('<div class="cover"></div>');
+$map.append($cover);
+$cover.on('click', function () {
+  $cover.remove();
+});

@@ -5,23 +5,23 @@
 <head>
 	<title>JPT | UX Designer</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/main.css">
-  <link rel="js" href="js/main.js">
+	<link rel="stylesheet" href="css/main.css"> 
 </head>
 
 <body>
 
-<!-- NAV MENU -->
+<!-- NAV MENU nav-menu, btn-toggle-nav, menu-nav-->
 
 <nav class="menu">
   <a href="#headfix"><img src="" alt="jpt" class="logo"></a>
-  <div class="nav">
-    <span><a href="#contact" class="scrollto">contact</a></span>
-    <span><a href="#about" class="scrollto">about</a></span>
-    <span><a href="#work" class="scrollto">work</a></span>
-  </div>
+  <li class="toggle-nav" href="#">&#9776;</li>
+    <ul class="nav">
+      <li><a href="#work" class="scrollto">work</a></li>
+      <li><a href="#about" class="scrollto">about</a></li>
+      <li><a href="#contact" class="scrollto">contact</a></li>
+  </ul>
   <div>
-  <a class="toggle-nav" href="#">&#9776;</a>
+  
   </div>
 </nav>
 
@@ -39,10 +39,10 @@
 
 <!-- PORTFOLIO WORK -->
 
-<section id="work">
-
+<section>
+  <div id="work">
     <h2>portfolio work</h2>
-
+  </div>
 </section>
 
 <!-- PORTFOLIO BOXES -->
@@ -60,9 +60,9 @@
 
 <!-- CONTACT -->
 
-<section id="contact">
+<section>
 
-<div>
+<div id="contact">
   <h2>contact</h2> 
     <dt class="email"><a href="mailto:jenniferptaylor3@gmail.com">jenniferptaylor3@gmail.com</a></dt>
     <dt class="message"><a href="mailto:jenniferptaylor3@gmail.com">message</a></dt>
@@ -71,6 +71,9 @@
 </section>
 
 <!-- CLOSING -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

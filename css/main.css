@@ -1,0 +1,209 @@
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  text-decoration: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: 2px solid red;
+  margin: 0px 0px 0px 0px;
+}
+
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+/*----- DESKTOP MENU -----*/
+
+.menu {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(7,7,23,0.2);
+  position: fixed;
+  font-size: 1.5em;
+  font-weight:200;
+  z-index: 9999;
+  color: #000;
+}
+
+.logo {
+  padding: 13px 13px 13px 13px;
+  color: black;
+  text-decoration: none;
+  float: left;
+}
+
+.logo:hover {
+  color: white;
+  height: 100%;
+  text-decoration: none;
+}
+
+.nav {
+  margin-top: 0px;
+  color: black;
+  text-decoration: none;
+  float: right;
+  list-style-type: none;
+  display: block;
+  padding-top: 15px;
+}
+
+.scrollto {
+    color: black;
+    text-decoration: none;
+}
+
+.scrollto:hover {
+  color: white;
+  height: 100%;
+  text-decoration: none;
+}
+
+.scrollto:active {
+  color: #fff;
+  text-decoration: none;
+}
+ 
+.menu li {
+    padding-right: 20px;
+    float:left;
+}
+ 
+.nav li:last-child {
+    margin-right: 5px;
+}
+
+.toggle-nav {
+    display:none;
+}
+
+/*----- MOBILE MENU -----*/
+ 
+@media screen and (max-width: 40em) {
+    .menu {
+        position:relative;
+        display:inline-block;
+        z-index: 1000;
+    }
+
+/*background: rgba(7,7,23,0.2);*/
+ 
+    .menu ul .nav {
+        display: none;
+    }
+ 
+    .menu ul {
+        width:25%;
+        position:relative;
+        border-radius:3px;
+        background: rgba(7,7,23,0.2);
+        border-bottom: #000 solid 1px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #000;
+        border-left: #000 solid 1px;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: #000;
+        border-top: #000 solid 1px;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: #000;
+        border-right: #000 solid 1px;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #000;
+        clear: right;
+        display: none;
+    }
+
+   .menu ul.active{
+      display:block;
+      margin-bottom:0px;
+    }
+ 
+    .menu li {
+        float: right;
+        display: inline-block;
+        padding: none;
+    }
+
+   /* display and position for ul and li*/
+ 
+    .menu a {
+        display:block;
+    }
+ 
+    .toggle-nav {
+        padding: 13px 20px 0px 0px;
+        float:right;
+        display:inline-block;
+        border-radius:3px;
+        color:#000;
+        font-size: 25px;
+        text-decoration: none;
+    }
+ 
+    .toggle-nav:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .toggle-nav:active {
+      text-decoration: none;
+      color: #fff;
+    }
+}
+
+
+#headfix {
+  background: gray;
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+.box {
+  border: 13px white;
+  border-style: double;
+  padding: 20px 15px 20px 15px;
+  width: 400px;
+  color: white;
+  display: inline-block;
+  margin: 150px 0 0 0;
+}
+
+#work {
+  background-color: pink;
+  width: 100%;
+  height: 15em;
+}
+
+#about {
+  background-color:lavender;
+  width: 100%;
+  float: left;
+  height: 20em;
+}
+
+#contact {
+  background-color:mistyrose; 
+  width: 100%;
+  height: 40em;
+}
+
+.nav {
+  float:right;
+}
+
+/*for iphone ipad: 
+@media screen (max-width: 480px)
+menu-bar drop-down on right hand side for nav*/
+

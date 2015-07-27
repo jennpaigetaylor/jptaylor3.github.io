@@ -87,53 +87,47 @@ h1, h2, h3 {
     .menu {
         position:relative;
         display:inline-block;
-        background: rgba(7,7,23,0.2)
+        background: rgba(7,7,23,0.2);
         z-index: 1000;
     }
-
- /*   .menu {
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  font-size: 1.5em;
-  font-weight:200;
-  z-index: 9999;
-  color: #000;
-}*/
  
     .menu ul .nav {
         display:none;
     }
  
     .menu ul {
-        width:20%;
-        position:absolute;
-        top:70%;
-        left:0px;
-        padding:10px 18px;
+        width:25%;
+        position:relative;
+        margin-top: 60px;
+        margin-right:0px;
         border-radius:3px;
         background: rgba(7,7,23,0.2);
-    }
- 
-/*    .menu ul:after {
-        float:right;
-        width:0px;
-        height:0px;
-        position:absolute;
-        top:0%;
-        left:22px;
-        content:'';
-        transform:translate(0%, -100%);
-        border-left:7px solid transparent;
-        border-right:7px solid transparent;
-        border-bottom:7px solid #303030;
-    }*/
+        border-bottom: #000 solid 1px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #000;
+        border-left: #000 solid 1px;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: #000;
+        border-top: #000 solid 1px;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: #000;
+        border-right: #000 solid 1px;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #000;
+      }
  
     .menu li {
-        margin:5px 0px 5px 0px;
-        float:left;
-        display:inline-block;
+        margin: 8px 10px 8px 0px;
+        float: right;
+        display: inline-block;
+        padding: none;
     }
+
+    .menu li:
 
    /* display and position for ul and li*/
  
@@ -152,13 +146,11 @@ h1, h2, h3 {
     }
  
     .toggle-nav:hover {
-        margin-top: 0px;
         text-decoration: none;
         color: #fff;
     }
 
     .toggle-nav:active {
-      margin-top: 0px;
       text-decoration: none;
       color: #fff;
     }

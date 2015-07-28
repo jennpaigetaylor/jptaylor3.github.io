@@ -183,20 +183,22 @@ h1, h2, h3 {
 #work {
   background-color: pink;
   width: 100%;
-  height: 5em;
+  height: 15em;
+  padding: 15px 0px;
 }
 
 #about {
   background-color:lavender;
   width: 100%;
   float: left;
-  height: 5em;
+  height: 20em;
+  padding: 15px 0px;
 }
 
 #contact {
   background-color:mistyrose; 
   width: 100%;
-  height: 20em;
+  height: 5em;
 }
 
 .nav {

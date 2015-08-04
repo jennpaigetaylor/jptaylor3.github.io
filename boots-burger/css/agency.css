@@ -15,7 +15,7 @@ body {
 }
 
 .text-primary {
-    color: #CCCC99;
+    color: rgba(207,180,160,88);
 }
 
 p {
@@ -36,14 +36,14 @@ a.active {
 }
 
 a {
-    color: ##CCCC99;
+    color: #rgba(207,180,160,88);
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #CCCC99;
+    color: rgba(207,180,160,88);
 }
 
 h1,
@@ -70,12 +70,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #CCCC99;
+    border-color: rgba(207,180,160,88);
     text-transform: uppercase;
     font-family: 'Josefin Sans',Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: ##CCCC99;
+    background-color: #rgba(207,180,160,88);
 }
 
 .btn-primary:hover,
@@ -83,9 +83,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #CCCC99;
+    border-color: rgba(207,180,160,88);
     color: #fff;
-    background-color: #CCCC99;
+    background-color: rgba(207,180,160,88);
 }
 
 .btn-primary:active,
@@ -109,12 +109,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: ##CCCC99;
-    background-color: ##CCCC99;
+    border-color: #rgba(207,180,160,88);
+    background-color: #rgba(207,180,160,88);
 }
 
 .btn-primary .badge {
-    color: ##CCCC99;
+    color: #rgba(207,180,160,88);
     background-color: #fff;
 }
 
@@ -167,7 +167,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .btn-xl .badge {
-    color: ##CCCC99;
+    color: #rgba(207,180,160,88);
     background-color: #fff;
 }
 
@@ -180,7 +180,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: 'Kaushan Script', cursive;
     size: 3em;
     font-weight: bolder;
-    color: #CCCC99;
+    color: rgba(207,180,160,88);
 }
 
 .navbar-default .navbar-brand:hover,
@@ -195,8 +195,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: ##CCCC99;
-    background-color: ##CCCC99;
+    border-color: #rgba(207,180,160,88);
+    background-color: #rgba(207,180,160,88);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -205,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: ##CCCC99;
+    background-color: #rgba(207,180,160,88);
 }
 
 .navbar-default .nav li a {
@@ -219,20 +219,20 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #CCCC99;
+    color: rgba(207,180,160,88);
     font-size: ;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: ##CCCC99;
+    background-color: #rgba(207,180,160,88);
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: ##CCCC99;
+    background-color: #rgba(207,180,160,88);
 }
 
 @media(min-width:990px) {
@@ -303,8 +303,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 180px;
-        padding-bottom: 200px;
+        padding-top: 265px;
+        padding-bottom: 30px;
     }
 
     header .intro-text .intro-heading {
@@ -316,7 +316,7 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 120px;
+        margin-bottom: 300px;
         text-transform: uppercase;
         font-family: 'Josefin Sans',Helvetica,Arial,sans-serif;
         font-size: 55px;
@@ -335,7 +335,7 @@ section {
 }
 
 section h2.section-heading {
-    margin-top: 0;
+    margin-top: 0px;
     margin-bottom: 15px;
     font-size: 40px;
 }
@@ -503,7 +503,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #CCCC99;
+    background-color: rgba(207,180,160,88);
 }
 
 .timeline>li .timeline-image h4 {
@@ -689,7 +689,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: ##CCCC99;
+    border-color: #rgba(207,180,160,88);
     box-shadow: none;
 }
 
@@ -767,7 +767,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: ##CCCC99;
+    background-color: #rgba(207,180,160,88);
 }
 
 .btn:focus,
@@ -855,12 +855,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: ##CCCC99;
+    background: #rgba(207,180,160,88);
 }
 
 ::selection {
     text-shadow: none;
-    background: ##CCCC99;
+    background: #rgba(207,180,160,88);
 }
 
 img::selection {
@@ -872,7 +872,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: ##CCCC99;
+    webkit-tap-highlight-color: #rgba(207,180,160,88);
 }
 
 .map {

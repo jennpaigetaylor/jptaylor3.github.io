@@ -163,10 +163,11 @@ h1, h2, h3 {
 
 
 #headfix {
-  background: gray;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../img/flower.jpg);
   position: relative;
-  width: 100%;
-  height: 450px;
+/*  width: 100%;*/
+/*  height: 450px;*/
 }
 
 .box {
@@ -182,9 +183,12 @@ h1, h2, h3 {
 #work {
   background-color: pink;
   width: 100%;
-  height: 5em;
-  padding: 5px 0px;
   font-size: 16px;
+  padding: 3em 5em 5em;
+  padding-top: 3em;
+  padding-right: 5em;
+  padding-bottom: 5em;
+  padding-left: 5em;
 }
 
 #about {
@@ -221,7 +225,49 @@ a:hover {
   float:right;
 }
 
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.prop {
+  padding: 27px 20px 20px 20px;
+  text-align: right;
+  font-size: .6em;
+  color: #000;}
+
 /*for iphone ipad: 
 @media screen (max-width: 480px)
 menu-bar drop-down on right hand side for nav*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

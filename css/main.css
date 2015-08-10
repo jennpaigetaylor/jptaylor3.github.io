@@ -184,9 +184,9 @@ h1, h2, h3 {
   background-color: pink;
   width: 100%;
   font-size: 16px;
-  padding: 3em 5em 5em;
+/*  padding: 3em 5em 5em;*/
   padding-top: 3em;
-  padding-right: 5em;
+/*  padding-right: 5em;*/
   padding-bottom: 5em;
   padding-left: 5em;
 }

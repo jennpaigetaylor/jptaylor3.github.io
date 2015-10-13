@@ -91,8 +91,6 @@ h1, h2, h3 {
         z-index: 1000;
     }
 
-/*background: rgba(7,7,23,0.2);*/
- 
     .menu ul .navj {
         display: none;
     }
@@ -133,13 +131,13 @@ h1, h2, h3 {
         padding: none;
     }
 
-   /* display and position for ul and li*/
+/* display and position for ul and li*/
  
-    .menu a {
+.menu a {
         display:block;
     }
  
-    .toggle-nav {
+.toggle-nav {
         padding: 13px 20px 0px 0px;
         float:right;
         display:inline-block;
@@ -149,12 +147,12 @@ h1, h2, h3 {
         text-decoration: none;
     }
  
-    .toggle-nav:hover {
+.toggle-nav:hover {
         text-decoration: none;
         color: #fff;
     }
 
-    .toggle-nav:active {
+.toggle-nav:active {
       text-decoration: none;
       color: #fff;
     }
@@ -164,7 +162,7 @@ h1, h2, h3 {
 
 #headfix {
   height: 80vh;
-  background-color:gray;
+  background-color: gray;
   position: relative;
 }
 
@@ -178,6 +176,8 @@ h1, h2, h3 {
   margin: 150px 0 0 0;
 }
 
+/*work*/
+
 #work {
   background-color: pink;
   width: 100%;
@@ -189,8 +189,20 @@ h1, h2, h3 {
   padding-left: 5em;
 }
 
+.project {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+}
+
+.project: last-child {
+  margin-right: 0%;
+}
+
+/*about*/
+
 #about {
-  background-color:mistyrose;
+  background-color:gray;
   width: 100%;
   float: left;
   height: 12em;
@@ -202,8 +214,10 @@ h1, h2, h3 {
   color: black;
 }
 
+/*contact*/
+
 #contact {
-  background-color:mistyrose; 
+  background-color:white; 
   width: 100%;
   height: 40em;
   padding: 0px 0px;
@@ -223,21 +237,12 @@ a:hover {
   float:right;
 }
 
-.container {
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-.prop {
+.copyright {
   padding: 27px 20px 20px 20px;
   text-align: right;
   font-size: .6em;
-  color: #000;}
-
-/*for iphone ipad: 
-@media screen (max-width: 480px)
-menu-bar drop-down on right hand side for nav*/
-
+  color: #000;
+}
 
 
 

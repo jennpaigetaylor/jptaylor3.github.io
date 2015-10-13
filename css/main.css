@@ -7,7 +7,6 @@ body {
   text-decoration: none;
   color: black;
   text-align: center;
-  border: 2px solid red;
   margin: 0px 0px 0px 0px;
 }
 
@@ -20,10 +19,10 @@ h1, h2, h3 {
 
 /*----- DESKTOP MENU -----*/
 
-.menuj {
+.menu {
   width: 100%;
   height: 60px;
-  background-color: rgba(7,7,23,0.2);
+  background-color: rgba(7,7,23,0.5);
   position: fixed;
   font-size: 1.5em;
   font-weight:200;
@@ -70,7 +69,7 @@ h1, h2, h3 {
   text-decoration: none;
 }
  
-.menuj li {
+.menu li {
     padding-right: 20px;
     float:left;
 }
@@ -86,7 +85,7 @@ h1, h2, h3 {
 /*----- MOBILE MENU -----*/
  
 @media screen and (max-width: 40em) {
-    .menuj {
+    .menu {
         position:relative;
         display:inline-block;
         z-index: 1000;
@@ -94,11 +93,11 @@ h1, h2, h3 {
 
 /*background: rgba(7,7,23,0.2);*/
  
-    .menuj ul .navj {
+    .menu ul .navj {
         display: none;
     }
  
-    .menuj ul {
+    .menu ul {
         width:25%;
         position:relative;
         border-radius:3px;
@@ -123,12 +122,12 @@ h1, h2, h3 {
         display: none;
     }
 
-   .menuj ul.active{
+   .menu ul.active{
       display:block;
       margin-bottom:0px;
     }
  
-    .menuj li {
+    .menu li {
         float: right;
         display: inline-block;
         padding: none;
@@ -136,7 +135,7 @@ h1, h2, h3 {
 
    /* display and position for ul and li*/
  
-    .menuj a {
+    .menu a {
         display:block;
     }
  
@@ -164,8 +163,7 @@ h1, h2, h3 {
 
 #headfix {
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(../img/flower.jpg);
-  background-image: url("../img/blue.png");
+  background-image: url("../img/ray-bans.jpg");
   position: relative;
 }
 

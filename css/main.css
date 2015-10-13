@@ -163,8 +163,8 @@ h1, h2, h3 {
 /*Hero Headfix*/
 
 #headfix {
-/*  height: 80vh;*/
-  background-image: url(../img/ray-bans.jpg);
+  height: 80vh;
+  background-image: url(./img/ray-bans.jpg);
   position: relative;
 }
 

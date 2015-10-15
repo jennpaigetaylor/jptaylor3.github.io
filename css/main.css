@@ -27,7 +27,7 @@ h1, h2, h3 {
   font-size: 18px;
   font-weight:200;
   z-index: 9999;
-  color: light gray;
+  color: #D3D3D3;
 }
 
 .logo {
@@ -221,7 +221,7 @@ h1, h2, h3 {
 /*contact*/
 
 #contact {
-  background-color:white; 
+  background-color:#D3D3D3; 
   width: 100%;
   font-size: 14px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;

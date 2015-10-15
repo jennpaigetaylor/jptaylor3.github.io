@@ -27,7 +27,7 @@ h1, h2, h3 {
   font-size: 18px;
   font-weight:200;
   z-index: 9999;
-  color: #000;
+  color: light gray;
 }
 
 .logo {

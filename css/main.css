@@ -143,7 +143,7 @@ h1, h2, h3 {
 /*headfix*/
 
 #headfix {
-  height: 65vh;
+  height: 75vh;
   background-color: #A2CEC9;
   position: relative;
 }
@@ -169,13 +169,17 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.about-content {
+  padding-top: 70px;
+}
+
 .left {
     float: left;
     width: 60%;
     overflow: scroll;
     height: 50vh;
     position: relative;
-    margin: 90px 20px 80px 80px;
+    margin: 10px 20px 80px 80px;
 }
 
 .bio {
@@ -186,10 +190,9 @@ h1, h2, h3 {
 
 .right {
     float: left;
-    width: 20%;
     position: relative;
     height: 50vh;
-    margin: 100px 100px 0px 0px;
+    margin: 35px 100px 0px 0px;
 }
 
 .img-circle {

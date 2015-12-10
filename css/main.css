@@ -178,7 +178,7 @@ h1, h2, h3 {
 .left {
     float: left;
     width: 60%;
-    overflow: scroll;
+/*    overflow: scroll;*/
     height: 50vh;
     position: relative;
     margin: 10px 50px 80px 80px;
